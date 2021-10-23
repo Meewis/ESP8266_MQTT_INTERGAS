@@ -144,7 +144,7 @@ code:
 'ramses_boiler_idL',
 'Productioncode'
 
-So with s serial string of 3 chars "S?/n" the reply delivers part 1, 2 and parlty(?) 6.
+So with s serial string of 3 chars "S?/n" the reply delivers data for part 1, 2 and parlty(?) 6.
 Adjusting this string to "P?/n" might reply data for part 7; but that has to be tested.
 
 I use Node-Red to generate every 3 seconds a serial string (S?/n) and publish that to the MQTT broker. The ESP8266 will pick up that message and send thee 3 bytes to the boiler. The boiler replies (in this case) with 32 bytes. After convertion by the ESP8266, this array of data is published to the MQTT broker. Node-Red will pick up this array of data. Because its already formatted in a string as hex values, this is easely processed in Node-Red to buffer from where the data can selected by indexing.
