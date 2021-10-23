@@ -2,7 +2,9 @@
 Intergas boiler (universal) communication gateway
 
 This project started after I got inspired by the topic about communication to a Intergas HRE boiler in a forum at www.circuitsonline.net (https://www.circuitsonline.net/forum/view/80667). I also took a ESP8266 to commicatie to the boiler, but made the MQTT communication transparent. 
+
 The ESP8266 is subcribed to at MQTT broker and waits for any data string. When data is received by a MQTT message this is forwarden directly and uncondional to the Serial output. Secundairy the ESP8266 is waiting for any data on its Serial input. When one byte of x bytes is received an automatic timeout mechanisme is triggered so that when no serial data is comming after 1 seconde, the whole serial message wil be converted to a ascii hex csv string and that string is finaly problisched by MQTT to the MQTT broker.
+
 In the CircuitOnline forum the setup was to transmit a serial string of 3 chars "S?/n" as a reqest to get 32 status bytes as a reply from the Intergas boiler. With my setup of the program it is free to send any string to the Intergas boiler. This wil be handy because not yet all possebilibies of the Intergas communication are explored jet. 
 
 Intergas supplies its own communication softwaretool and it's called IDS. Out of this softwaretool is know that the following informatie could be pulled out of the boiler:
@@ -113,7 +115,7 @@ code:
 'Parameter r',
 'Parameter F.'
 
-8 ) extra parameters
+8) Extra parameters
 'id_dongle0',
 'id_dongle1',
 'id_dongle2',
@@ -123,7 +125,7 @@ code:
 'id_lan2',
 'id_lan3'
 
-10) second info datablock
+10) Second info datablock
 'Node nr',
 'Cloud id0',
 'Cloud id1',
