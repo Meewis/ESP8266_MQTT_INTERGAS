@@ -1,0 +1,5 @@
+Giving this sequense of data to the (decimal): [ 82, 69, 86 ], via MQTT to the ESP8266, the boiler replies with:
+"[105] [99] [51] [109] [107] [49] [32] [32] [32] [42] [80] [49] [57] [48] [53] [49] [55] [42] [86] [50] [46] [53] [51] [45] [73] [107] [182] [148] [210] [95] [45] [160] [0] "
+In ASCII it shows as: i c 2 m k 0 (space) (space) (space) * P 1 9 0 5 1 7 * V 2 . 5 3 - I k Â  ö Ê _ - á [0]
+
+but what does it mean?
