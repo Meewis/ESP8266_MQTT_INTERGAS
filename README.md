@@ -7,6 +7,8 @@ The ESP8266 is subcribed to at MQTT broker and waits for any data string. When d
 
 In the CircuitOnline forum the setup was to transmit a serial string of 3 chars "S?/n" as a reqest to get 32 status bytes as a reply from the Intergas boiler. With my setup of the program it is free to send any string to the Intergas boiler. This wil be handy because not yet all possebilibies of the Intergas communication are explored jet. 
 
+[2-1-2022; a new command is discovered: REV]
+
 Intergas supplies its own communication softwaretool and it's called IDS. Out of this softwaretool is know that the following informatie could be pulled out of the boiler:
 1) 'status' 
 't1',
