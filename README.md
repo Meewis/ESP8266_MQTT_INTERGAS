@@ -9,7 +9,7 @@ In the CircuitOnline forum the setup was to transmit a serial string of 3 chars 
 
 [2-1-2022; a new command is discovered: REV]
 
-Intergas supplies its own communication softwaretool and it's called IDS. Out of this softwaretool is know that the following informatie could be pulled out of the boiler:
+Intergas supplies its own communication softwaretool and it's called IDS. Out of this softwaretool is know that the following informatie could be pulled out of the boiler with the command "S?/n":
 1) 'status' 
 't1',
 't2',
